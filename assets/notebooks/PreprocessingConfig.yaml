@@ -1,5 +1,5 @@
 UnsupervisedGlobalConfig:
-    embed_size: 512
+    embed_size: 768
     max_vocab_size: 30522
     buffer_size: 10000
     global_training: True
@@ -29,7 +29,7 @@ TextClusteringConfig:
     
 WordEmbeddingPreTrainingConfig:
     # BERT
-    hidden_size: 512
+    hidden_size: 768
     num_hidden_layers: 8
     num_attention_heads: 8
         
@@ -37,7 +37,7 @@ WordEmbeddingPreTrainingConfig:
     pretrained_save_path: "../results/PreTrainedModel/"
     checkpoint_save_path: "../results/PreTrainedChkpts/"
     checkpoint_max_saves: 3
-    checkpoint_save_interval: 200
+    checkpoint_save_interval: 500
     
     # Learning rate schedule
     init_lr: 0.0001
@@ -49,9 +49,9 @@ WordEmbeddingPreTrainingConfig:
     adam_epsilon: 0.1
     weight_decay_rate: 0.1
     
-    epochs: 2
-    batch_size: 10
-    max_seq_length: 300
+    epochs: 20
+    batch_size: 60
+    max_seq_length: 100
     repeat_size: 5
         
     # State 
