@@ -1,6 +1,6 @@
 UnsupervisedGlobalConfig:
     embed_size: 512
-    max_vocab_size: 30000
+    max_vocab_size: 30522
     buffer_size: 10000
     global_training: True
     path: '/results/'
