@@ -16,14 +16,14 @@ PreprocessingGlobalConfig:
 PhraserModelConfig:
     min_count: 5
     threshold: 7
-    load_model: False
-    save_model: True
+    load_model: True
+    save_model: False
     training: False
     model_name: 'phrase_model.joblib'
     
 TextClusteringConfig:
-    load_model: False
-    save_model: True
+    load_model: True
+    save_model: False
     training: False
     model_name: 'template_miner.joblib'
     
@@ -40,8 +40,8 @@ WordEmbeddingPreTrainingConfig:
     checkpoint_save_interval: 500
     
     # Learning rate schedule
-    init_lr: 0.0001
-    num_warmup_steps: 2
+    init_lr: 0.001
+    num_warmup_steps: 10
     
     # Optimizer
     adam_beta1: 0.9
